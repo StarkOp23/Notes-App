@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+:root {
+    --background-color: #FFC700;
+    --bs-primary-rgb: #12296c;
+}
+
+body {
+    font-family: "Alegreya", serif;
+    /* background-color: var(--background-color); */
+    background-color: #395c66;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    color: white;
+}
