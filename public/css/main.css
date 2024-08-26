@@ -168,3 +168,17 @@ h6 {
     --bs-pagination-active-bg: var(--bs-primary-rgb);
     --bs-pagination-active-border-color: var(--bs-primary-rgb);
 }
+
+
+/* .home-title::before{
+    content: url('../img/stars.svg');
+    position: absolute;
+    left: -50px;
+    top: -30px;
+}
+.home-title::after{
+    content: url('../img/stars.svg');
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
+} */
