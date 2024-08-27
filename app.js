@@ -9,6 +9,17 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+//! Configure and enable session management using the express-session middleware
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    store: MongoStore.create({
+        mongoUrl: process.env.MongoURL
+    })
+
+}));
+
 //! Initialize Passport
 app.use(passport.initialize());
 app.use(passport.session());
