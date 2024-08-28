@@ -15,18 +15,34 @@
 
                         <div class="card" border-primary style="min-height: 210px;">
 
-                            <a href="/dashboard/item/ <%= notes[i]._id %> "  class="card-body text-decoration-none">
-                                
-                                <h5 class="card-title"><%= notes[i].title %> </h5>
-                                
-                                </a>
+                            <a href="/dashboard/item/ <%= notes[i]._id %> " class="card-body text-decoration-none">
 
+                                <h5 class="card-title">
+                                    <%= notes[i].title %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= notes[i].body %>
+                                </p>
+                            </a>
                         </div>
-
                     </div>
 
 
-                    <% }} %>
+                    <% }} else{ %>
+
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="../../public/img/human-3.svg" alt="">
+                            </div>
+                            <div class="col mt-md-4">
+                                <h2>That's Cool....</h2>
+                                <h4>Let's go with your first note ! <br /><br />
+                                    <a href="/dashboard/add">Create One</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <% } %>
         </div>
     </div>
 </div>
