@@ -1,0 +1,23 @@
+<div class="container-fluid container-fluid-custom pb-5 mb-5">
+
+    <div class="row">
+        <% if(searchResults !='' ) { %>
+            <% searchResults.forEach(function (note, index) { %>
+
+                <a href="/dashboard/item/<%= note._id %>">
+                    <h4>
+                        <%= note.title %>
+                    </h4>
+                </a>
+
+                <% }) %>
+                    <% } else { %>
+                        <div class="text-center">
+                            <img src="https://imgs.search.brave.com/xJ2BoG-jCvOMKOBTGq1hbmGdUZPgXgf4kEEs7pdDB7Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3Ivbm8tcmVzdWx0/LWRvY3VtZW50LWZp/bGUtZGF0YS1mb3Vu/ZC12Ml8xODUxMDkt/OC5qcGc_c2l6ZT02/MjYmZXh0PWpwZw"
+                                alt="No items found" class="img-fluid">
+                        </div>
+                        <% } %>
+
+    </div>
+
+</div>
